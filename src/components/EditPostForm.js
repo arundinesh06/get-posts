@@ -83,7 +83,7 @@ const EditPostForm = () => {
           <p className={styles.error}>{errors.body}</p>
         )}
         <button className={styles.button} disabled={isSubmitting}>
-          Create
+          Update
         </button>
       </div>
     </form>

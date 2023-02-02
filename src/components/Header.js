@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.logo}>
-        <Link to="/">Posts</Link>
+        <Link to="/">Posts Manager</Link>
       </h1>
       <ul className={styles.menu}>
         <li>
