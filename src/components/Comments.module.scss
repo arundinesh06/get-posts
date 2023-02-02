@@ -1,0 +1,10 @@
+.container {
+  padding: 10px 30px 20px;
+  border-top: 1px solid gray;
+  transition: all 1s ease-in;
+}
+@media (max-width: 499px) {
+  .container {
+    padding: 10px;
+  }
+}

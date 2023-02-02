@@ -1,0 +1,51 @@
+.form-controls {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  .form-control {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    input {
+      padding: 8px;
+      &:focus {
+        outline: none;
+      }
+    }
+    textarea {
+      padding: 8px;
+      resize: none;
+      min-height: 120px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+.button {
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 7px 15px;
+  min-height: 45px;
+  border-radius: 3px;
+  &:disabled {
+    opacity: 0.35;
+  }
+}
+.error {
+  color: red;
+  margin: 0;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: -23px;
+  left: 0;
+}
