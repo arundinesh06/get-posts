@@ -3,7 +3,7 @@ import styles from "./Home.module.scss";
 import Posts from "../../components/Posts";
 import { useDispatch, useSelector } from "react-redux";
 // import Pagination from "../../components/Pagination";
-import PaginateItems from "./PaginateItems";
+import PaginateItems from "../../components/PaginateItems";
 
 const Home = () => {
   const posts = useSelector((state) => state.posts.posts);
