@@ -8,7 +8,7 @@ import PaginateItems from "../../components/PaginateItems";
 const Home = () => {
   const posts = useSelector((state) => state.posts.posts);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(5);
+  const [postsPerPage, setPostsPerPage] = useState(2);
   const [itemOffset, setItemOffset] = useState(0);
 
   // Get current posts

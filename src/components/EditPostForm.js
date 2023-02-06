@@ -64,10 +64,11 @@ const EditPostForm = () => {
             onBlur={handleBlur}
             className={errors.title && touched.title ? "input-error" : ""}
           />
+          {errors.title && touched.title && (
+            <p className={styles.error}>{errors.title}</p>
+          )}
         </div>
-        {errors.title && touched.title && (
-          <p className={styles.error}>{errors.title}</p>
-        )}
+
         <div className={styles["form-control"]}>
           <textarea
             id="body"
@@ -78,10 +79,11 @@ const EditPostForm = () => {
             onBlur={handleBlur}
             className={errors.title && touched.title ? "input-error" : ""}
           />
+          {errors.body && touched.body && (
+            <p className={styles.error}>{errors.body}</p>
+          )}
         </div>
-        {errors.body && touched.body && (
-          <p className={styles.error}>{errors.body}</p>
-        )}
+
         <button className={styles.button} disabled={isSubmitting}>
           Update
         </button>
