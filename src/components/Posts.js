@@ -6,9 +6,8 @@ import Loader from "./Loader";
 import styles from "./Posts.module.scss";
 import { fetchComments } from "../redux/actions/postActions";
 
-const Posts = () => {
+const Posts = ({ posts }) => {
   const dispatch = useDispatch();
-  const posts = useSelector((state) => state.posts.posts);
   const loading = useSelector((state) => state.posts.loading);
   useEffect(() => {
     if (posts.length === 0) {

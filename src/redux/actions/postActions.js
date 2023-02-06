@@ -12,7 +12,7 @@ export const fetchPosts = () => async (dispatch) => {
     if (response) {
       dispatch({
         type: postActionTypes.FETCH_POSTS_SUCCESS,
-        payload: response.splice(95, 5),
+        payload: response,
       });
     }
   } catch (error) {
